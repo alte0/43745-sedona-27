@@ -20,8 +20,9 @@
   </header>
   <!-- end header -->
   <main>
+    <h1 class="visually-hidden">Седона — небольшой городок в Аризоне</h1>
     <div>
-      <img src="img/intro-welcome.svg" width="459" height="353" alt="Welcome to Sedona">
+      <img src="img/intro-welcome.svg" width="459" height="353" alt="Добропожаловать в Седону">
     </div>
     <section>
       <div>
@@ -81,15 +82,47 @@
       <div>
         <p>Заинтересовались?</p>
         <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <button type="button">Поиск гостиницы в седоне</button>
+        <button type="button">
+          <span class="visually-hidden">Открыть форму</span>
+          Поиск гостиницы в седоне
+        </button>
       </div>
-      <!-- <form>
-        <label for="date-start">Дата заезда<input type="date" name="date-start" id="date-start" value="24 апреля 2017"></label>
-        <label for="date-end">Дата выезда<input type="date" name="date-end" id="date-end" value="4 июля 2017"></label>
-        <label for="count-people">Взрослые<input type="number" name="count-people" id="count-people" min="1" max="100" value="2"></label>
-        <label for="count-children">Дети<input type="number" name="count-children" id="count-children" min="0" max="100" value="2"></label>
-        <button type="submit">Найти</button>
-      </form> -->
+      <div>
+        <h2 class="visually-hidden">Форма поиска жилья в седоне</h2>
+        <form action="/search-hotels.php" method="GET">
+          <fieldset>
+            <legend class="visually-hidden">Даты посещения</legend>
+            <label for="date-start">
+              Дата заезда:
+              <input type="date" name="date-start" id="date-start" value="24 апреля 2017">
+              <button type="button" aria-label="Открыть календарь выбора даты заезда"></button>
+            </label>
+            <label for="date-end">
+              Дата выезда:
+              <input type="date" name="date-end" id="date-end" value="4 июля 2017">
+              <button type="button" aria-label="Открыть календарь выбора даты выезда"></button>
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend class="visually-hidden">Количество человек</legend>
+            <label for="count-people">
+              Взрослые:
+              <span>
+                <button type="button" aria-label="Увеличить количество взрослых на 1">+</button>
+                <input type="number" name="count-people" id="count-people" min="1" max="100" value="2">
+                <button type="button" aria-label="Уменьшить количество взрослых на 1">-</button>
+              </span>
+            </label>
+            <label for="count-children">
+              Дети:
+              <button type="button" aria-label="Увеличить количество детей на 1">+</button>
+              <input type="number" name="count-children" id="count-children" min="0" max="100" value="0">
+              <button type="button" aria-label="Уменьшить количество детей на 1">-</button>
+            </label>
+          </fieldset>
+          <button type="submit">Найти</button>
+        </form>
+      </div>
     </section>
     <div>
       <!-- интерактивная карта -->
