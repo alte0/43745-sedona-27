@@ -21,7 +21,68 @@
   <!-- end header -->
   <main>
     <h1 class="visually-hidden">Поиск жилья в городе Седона</h1>
-    <!-- здесь будет форма показа жилья -->
+    <form action="/search-hotels.php" method="get">
+      <div>
+        <fieldset>
+          <legend>Инфраструктура:</legend>
+          <ul>
+            <li>
+              <input type="checkbox" id="infrastructure-1" checked>
+              <label for="infrastructure-1">Бассейн</label>
+            </li>
+            <li>
+              <input type="checkbox" id="infrastructure-2">
+              <label for="infrastructure-2">Парковка</label>
+            </li>
+            <li>
+              <input type="checkbox" id="infrastructure-3">
+              <label for="infrastructure-3">Wi-Fi</label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+      <div>
+        <fieldset>
+          <legend>Тип жилья:</legend>
+          <ul>
+            <li>
+              <input type="checkbox" id="type-of-housing-1" checked>
+              <label for="type-of-housing-1">Гостиница</label>
+            </li>
+            <li>
+              <input type="checkbox" id="type-of-housing-2" checked>
+              <label for="type-of-housing-2">Мотель</label>
+            </li>
+            <li>
+              <input type="checkbox" id="type-of-housing-3" checked>
+              <label for="type-of-housing-3">Апартаменты</label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+      <div>
+        <fieldset>
+          <legend class="visually-hidden">Стоимость в сутки (Р):</legend>
+          <div>
+            <label for="min-price">
+              От
+              <input type="number" name="min-price" id="min-price" value="0">
+            </label>
+            <label for="max-price">
+              До
+              <input type="number" name="max-price" id="max-price" value="3000">
+            </label>
+          </div>
+          <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </fieldset>
+        <button type="button">Показать</button>
+      </div>
+    </form>
     <div>
       <p>
         <span>Найдено: 3</span>
