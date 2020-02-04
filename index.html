@@ -3,31 +3,33 @@
 <head>
   <meta charset="utf-8">
   <title>Седона - Главная</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <a>
-      <img src="img/logo-sedona.svg" width="140" height="71" alt="Лого Седона">
+  <header class="header">
+    <a class="wrap-logo">
+      <img src="img/logo-sedona.svg" class="logo" width="140" height="71" alt="Лого Седона">
     </a>
-    <nav>
-      <ul>
-        <li><a href="#">Информация</a></li>
-        <li><a href="#">Фото и видео</a></li>
-        <li><a href="#">Карта штата</a></li>
-        <li><a href="hotels.html">Гостиницы</a></li>
+    <nav class="nav">
+      <ul class="list-links">
+        <li class="list-links__item"><a href="#" class="list-links__link">Информация</a></li>
+        <li class="list-links__item"><a href="#" class="list-links__link">Фото и видео</a></li>
+        <li class="list-links__item"><a href="#" class="list-links__link">Карта штата</a></li>
+        <li class="list-links__item"><a href="hotels.html" class="list-links__link">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
   <!-- end header -->
-  <main>
+  <main class="main">
     <h1 class="visually-hidden">Седона — небольшой городок в Аризоне</h1>
-    <div>
-      <img src="img/intro-welcome.svg" width="459" height="353" alt="Добропожаловать в Седону">
+    <div class="intro">
+      <img class="intro__img" src="img/intro-welcome.svg" width="459" height="353" alt="Добропожаловать в Седону">
     </div>
     <section>
-      <div>
-        <h2>Седона — небольшой городок в Аризоне,заслуживающий большего!</h2>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      <div class="feature-header">
+        <h2 class="feature-header__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <p class="feature-header__desc">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </div>
       <!-- 5 reasons -->
       <h2 class="visually-hidden">Список причин.</h2>
@@ -80,48 +82,54 @@
         </li>
       </ul>
       <!-- end 5 reasons -->
-      <div>
-        <p>Заинтересовались?</p>
-        <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <button type="button">
+      <div class="feature-footer">
+        <p class="feature-footer__text-big">Заинтересовались?</p>
+        <p class="feature-footer__desc">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <button type="button" class="btn feature-footer__button">
           <span class="visually-hidden">Открыть форму</span>
           Поиск гостиницы в седоне
         </button>
       </div>
-      <div>
+      <div class="form-wrap">
         <h2 class="visually-hidden">Форма поиска жилья в седоне</h2>
-        <form action="/search-hotels.php" method="GET">
-          <fieldset>
+        <form class="form-search-hotels" action="/search-hotels.php" method="GET">
+          <fieldset class="form-search-hotels__fieldset fieldset">
             <legend class="visually-hidden">Даты посещения</legend>
-            <label for="date-start">
-              Дата заезда:
-              <input type="date" name="date-start" id="date-start" value="24 апреля 2017">
-              <button type="button" aria-label="Открыть календарь выбора даты заезда"></button>
-            </label>
-            <label for="date-end">
-              Дата выезда:
-              <input type="date" name="date-end" id="date-end" value="4 июля 2017">
-              <button type="button" aria-label="Открыть календарь выбора даты выезда"></button>
-            </label>
+            <div class="form-search-hotels__row-wrap">
+              <label class="form-search-hotels__label" for="date-start">
+                Дата заезда:
+                <input class="form-search-hotels__input" type="text" name="date-start" id="date-start" value="24 апреля 2017">
+              </label>
+              <button class="form-search-hotels__calendar" type="button" aria-label="Открыть календарь выбора даты заезда"></button>
+            </div>
+            <div class="form-search-hotels__row-wrap">
+              <label class="form-search-hotels__label" for="date-end">
+                Дата выезда:
+                <input class="form-search-hotels__input" type="text" name="date-end" id="date-end" value="4 июля 2017">
+              </label>
+              <button class="form-search-hotels__calendar" type="button" aria-label="Открыть календарь выбора даты выезда"></button>
+            </div>
           </fieldset>
-          <fieldset>
+          <fieldset class="form-search-hotels__fieldset fieldset">
             <legend class="visually-hidden">Количество человек</legend>
-            <label for="count-people">
+            <label class="form-search-hotels__label" for="count-people">
               Взрослые:
-              <span>
-                <button type="button" aria-label="Увеличить количество взрослых на 1">+</button>
-                <input type="number" name="count-people" id="count-people" min="1" max="100" value="2">
-                <button type="button" aria-label="Уменьшить количество взрослых на 1">-</button>
-              </span>
             </label>
-            <label for="count-children">
+            <span class="form-search-hotels__wrap-count-people">
+              <button class="form-search-hotels__btn-minus" type="button" aria-label="Увеличить количество взрослых на 1">+</button>
+              <input class="form-search-hotels__input form-search-hotels__input_count-people" type="number" name="count-people" id="count-people" min="1" max="100" value="2">
+              <button class="form-search-hotels__btn-plus" type="button" aria-label="Уменьшить количество взрослых на 1">-</button>
+            </span>
+            <label class="form-search-hotels__label" for="count-children">
               Дети:
-              <button type="button" aria-label="Увеличить количество детей на 1">+</button>
-              <input type="number" name="count-children" id="count-children" min="0" max="100" value="0">
-              <button type="button" aria-label="Уменьшить количество детей на 1">-</button>
             </label>
+            <span class="form-search-hotels__wrap-count-people">
+              <button class="form-search-hotels__btn-minus" type="button" aria-label="Увеличить количество детей на 1">+</button>
+              <input class="form-search-hotels__input form-search-hotels__input_count-people" type="number" name="count-children" id="count-children" min="0" max="100" value="0">
+              <button class="form-search-hotels__btn-plus" type="button" aria-label="Уменьшить количество детей на 1">-</button>
+            </span>
           </fieldset>
-          <button type="submit">Найти</button>
+          <button class="form-search-hotels__btn-submit btn" type="submit">Найти</button>
         </form>
       </div>
     </section>
@@ -130,19 +138,25 @@
     </div>
   </main>
   <!-- end main  -->
-  <footer>
-    <p>
-      <span>#visitsedona</span>
-      Тел: <a href="tel:+74956660266">+7(495) 666-02-66</a>
+  <footer class="footer">
+    <p class="contacts">
+      <span class="contacts__hashtag">#visitsedona</span>
+      Тел: <a class="contacts__tel" href="tel:+74956660266">+7(495) 666-02-66</a>
     </p>
-    <ul>
-      <li><a href="https://twitter.com/sedona">Twitter</a></li>
-      <li><a href="https://www.facebook.com/sedona">Facebook</a></li>
-      <li><a href="https://www.youtube.com/sedona">Youtube</a></li>
+    <ul class="lists-social">
+      <li class="lists-social__item">
+        <a class="lists-social__link lists-social__link_twitter" href="https://twitter.com/sedona">Twitter</a>
+      </li>
+      <li class="lists-social__item">
+        <a class="lists-social__link lists-social__link_facebook" href="https://www.facebook.com/sedona">Facebook</a>
+      </li>
+      <li class="lists-social__item">
+        <a class="lists-social__link lists-social__link_youtube" href="https://www.youtube.com/sedona">Youtube</a>
+      </li>
     </ul>
-    <p>
-      <span>Website by</span>
-      <a href="https://htmlacademy.ru/intensive/htmlcss">HtmlAcademy</a>
+    <p class="website-made">
+      <span class="website-made__text">Website by</span>
+      <a class="website-made__link" href="https://htmlacademy.ru/intensive/htmlcss">HtmlAcademy</a>
     </p>
   </footer>
   <!-- end footer  -->
