@@ -16,27 +16,24 @@
        url('../fonts/pt-sans-v11-latin_cyrillic-700.woff') format('woff');
 }
 
-html {
-  background-color:#f2f2f2;
-}
-
 body {
-  background-color: white;
-  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
+  background-color:#f2f2f2;
+  color: #333;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 26px;
-  box-shadow: 0px 5px 15px rgba(0,1,1,0.2);
 }
 
-p {
-  color: #333333;
+.wrap {
+  background-color: #fff;
+  box-shadow: 0px 5px 15px rgba(0,1,1,0.2);
 }
 
 .btn {
   border: none;
   font-size: 14px;
   line-height: 21px;
-  color: #ffffff;
+  color: #fff;
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
@@ -48,15 +45,15 @@ p {
 
 .list-links {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.list-links__item:nth-child(1),
-.list-links__item:nth-child(2) {
+.list-links__item_align-left {
   text-align: left;
 }
 
-.list-links__item:nth-child(3),
-.list-links__item:nth-child(4) {
+.list-links__item_align-right {
   text-align: right;
 }
 
@@ -102,7 +99,7 @@ p {
 
 .feature-footer {
   text-align: center;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .feature-footer__text-big,
@@ -208,6 +205,8 @@ p {
 
 .lists-social {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .lists-social__link {
@@ -343,6 +342,8 @@ p {
 
 .list-habitation {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .list-habitation__link {
