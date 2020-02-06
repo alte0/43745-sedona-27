@@ -32,66 +32,62 @@
   <!-- end header -->
   <main>
     <h1 class="visually-hidden">Поиск жилья в городе Седона</h1>
-    <form action="/search-hotels.php" method="get">
-      <div>
-        <fieldset>
-          <legend>Инфраструктура:</legend>
-          <ul>
-            <li>
-              <input type="checkbox" id="infrastructure-1" checked>
-              <label for="infrastructure-1">Бассейн</label>
+    <form class="form-filter" action="/search-hotels.php" method="get">
+      <div class="form-filter__column item-filter">
+        <fieldset class="item-filter__fieldset">
+          <legend class="item-filter__legend">Инфраструктура:</legend>
+          <ul class="item-filter__lists filter-lists">
+            <li class="filter-lists__item">
+              <input class="filter-lists__input" type="checkbox" id="infrastructure-1" checked>
+              <label class="filter-lists__label" for="infrastructure-1">Бассейн</label>
             </li>
-            <li>
-              <input type="checkbox" id="infrastructure-2">
-              <label for="infrastructure-2">Парковка</label>
+            <li class="filter-lists__item">
+              <input class="filter-lists__input" type="checkbox" id="infrastructure-2">
+              <label class="filter-lists__label" for="infrastructure-2">Парковка</label>
             </li>
-            <li>
-              <input type="checkbox" id="infrastructure-3">
-              <label for="infrastructure-3">Wi-Fi</label>
-            </li>
-          </ul>
-        </fieldset>
-      </div>
-      <div>
-        <fieldset>
-          <legend>Тип жилья:</legend>
-          <ul>
-            <li>
-              <input type="checkbox" id="type-of-housing-1" checked>
-              <label for="type-of-housing-1">Гостиница</label>
-            </li>
-            <li>
-              <input type="checkbox" id="type-of-housing-2" checked>
-              <label for="type-of-housing-2">Мотель</label>
-            </li>
-            <li>
-              <input type="checkbox" id="type-of-housing-3" checked>
-              <label for="type-of-housing-3">Апартаменты</label>
+            <li class="filter-lists__item">
+              <input class="filter-lists__input" type="checkbox" id="infrastructure-3">
+              <label class="filter-lists__label" for="infrastructure-3">Wi-Fi</label>
             </li>
           </ul>
         </fieldset>
       </div>
-      <div>
-        <fieldset>
-          <legend class="visually-hidden">Стоимость в сутки (Р):</legend>
-          <div>
-            <label for="min-price">
-              От
-              <input type="number" name="min-price" id="min-price" value="0">
-            </label>
-            <label for="max-price">
-              До
-              <input type="number" name="max-price" id="max-price" value="3000">
-            </label>
+      <div class="form-filter__column item-filter">
+        <fieldset class="item-filter__fieldset">
+          <legend class="item-filter__legend">Тип жилья:</legend>
+          <ul class="item-filter__lists filter-lists">
+            <li class="filter-lists__item">
+              <input class="filter-lists__input" type="checkbox" id="type-of-housing-1" checked>
+              <label class="filter-lists__label" for="type-of-housing-1">Гостиница</label>
+            </li>
+            <li class="filter-lists__item">
+              <input class="filter-lists__input" type="checkbox" id="type-of-housing-2" checked>
+              <label class="filter-lists__label" for="type-of-housing-2">Мотель</label>
+            </li>
+            <li class="filter-lists__item">
+              <input class="filter-lists__input" type="checkbox" id="type-of-housing-3" checked>
+              <label class="filter-lists__label" for="type-of-housing-3">Апартаменты</label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+      <div class="form-filter__column item-filter">
+        <fieldset class="item-filter__fieldset">
+          <legend class="item-filter__legend">Стоимость в сутки (Р):</legend>
+          <div class="item-filter__prices">
+            <label class="item-filter__label-price" for="min-price">От</label>
+            <input class="item-filter__input-price" type="number" name="min-price" id="min-price" value="0">
+            <label class="item-filter__label-price" for="max-price">До</label>
+            <input class="item-filter__input-price" type="number" name="max-price" id="max-price" value="3000">
           </div>
-          <div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+          <div class="slider-range">
+            <div class="slider-range__track"></div>
+            <div class="slider-range__bar"></div>
+            <div class="slider-range__btn slider-range__btn_left"></div>
+            <div class="slider-range__btn slider-range__btn_right"></div>
           </div>
         </fieldset>
-        <button type="button">Показать</button>
+        <button class="btn form-filter__submit" type="submit">Показать</button>
       </div>
     </form>
     <div class="sort">
