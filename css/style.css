@@ -27,6 +27,14 @@ body {
 .wrap {
   background-color: #fff;
   box-shadow: 0px 5px 15px rgba(0,1,1,0.2);
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.wrap-logo {
+  margin: 0 auto;
+  display: block;
+  width: 140px;
 }
 
 .btn {
@@ -44,9 +52,23 @@ body {
 }
 
 .list-links {
+  display: flex;
+  justify-content: space-between;
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.list-links__item  {
+  flex-grow: 1;
+}
+
+.list-links__item:first-child {
+  margin-left: 72px;
+}
+
+.list-links__item:last-child {
+  margin-right: 72px;
 }
 
 .list-links__item_align-left {
@@ -132,6 +154,11 @@ body {
   background-color: #503e33;
 }
 
+.form-wrap {
+  width: 570px;
+  margin: 0 auto;
+}
+
 .form-search-hotels__label,
 .form-search-hotels__input {
   font-size: 14px;
@@ -215,6 +242,11 @@ body {
 
 .footer {
   text-align: center;
+  display: flex;
+}
+
+.footer__column {
+  flex-basis: 33.33%;
 }
 
 .contacts {
@@ -371,6 +403,17 @@ body {
   margin: 0;
 }
 
+.list-habitation__item {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 72px;
+}
+
+.list-habitation__info {
+  padding: 0 30px;
+  margin-right: auto;
+}
+
 .list-habitation__link {
   font-size: 21px;
   font-weight: 700;
@@ -420,11 +463,13 @@ body {
   color: rgba(255, 255, 255, .3);
 }
 
-.list-habitation__stars {
+.list-habitation__evaluation {
   text-align: right;
 }
 
 .list-habitation__rating {
+  display: inline-block;
+  vertical-align: top;
   color: #666666;
   background-color: #f2f2f2;
 }
