@@ -33,7 +33,7 @@
   <main>
     <h1 class="visually-hidden">Поиск жилья в городе Седона</h1>
     <form class="form-filter" action="/search-hotels.php" method="get">
-      <div class="form-filter__column item-filter">
+      <div class="form-filter__column form-filter__column_one item-filter">
         <fieldset class="item-filter__fieldset">
           <legend class="item-filter__legend">Инфраструктура:</legend>
           <ul class="item-filter__lists filter-lists">
@@ -71,7 +71,7 @@
           </ul>
         </fieldset>
       </div>
-      <div class="form-filter__column item-filter">
+      <div class="form-filter__column form-filter__column_three item-filter">
         <fieldset class="item-filter__fieldset">
           <legend class="item-filter__legend">Стоимость в сутки (Р):</legend>
           <div class="item-filter__prices">
@@ -90,20 +90,18 @@
         <button class="btn form-filter__submit" type="submit">Показать</button>
       </div>
     </form>
-    <div class="sort">
-      <p>
-        <span class="sort__found-cout">Найдено: 3</span>
-        <span class="sort__text">Сортировка:</span>
-        <a class="sort__link sort__link_active" href="#">По цене</a>
-        <a class="sort__link" href="#">По типу</a>
-        <a class="sort__link" href="#">По рейтингу</a>
-        <a class="sort__link sort__link_increase" href="#" aria-label="По увеличению цены"></a>
-        <a class="sort__link sort__link_decrease sort__link_decrease-active" href="#" aria-label="По уменьшению цены"></a>
-      </p>
-    </div>
+    <p class="sort">
+      <span class="sort__found-cout">Найдено: 3</span>
+      <span class="sort__text">Сортировка:</span>
+      <a class="sort__link sort__link_active" href="#">По цене</a>
+      <a class="sort__link" href="#">По типу</a>
+      <a class="sort__link" href="#">По рейтингу</a>
+      <a class="sort__link sort__link_increase" href="#" aria-label="По увеличению цены"></a>
+      <a class="sort__link sort__link_decrease sort__link_decrease-active" href="#" aria-label="По уменьшению цены"></a>
+    </p>
     <ul class="list-habitation">
       <li class="list-habitation__item">
-        <img class="list-habitation__photo" src="img/photo-hotel-1.jpg" width="112" height="90" alt="Фото гостиницы Amara Resort & Spa">
+        <img class="list-habitation__photo" src="img/photo-hotel-1.jpg" width="135" height="90" alt="Фото гостиницы Amara Resort & Spa">
         <div class="list-habitation__info">
           <h3 class="list-habitation__title">
             <a class="list-habitation__link" href="#">Amara Resort & Spa</a>
@@ -127,7 +125,7 @@
         </div>
       </li>
       <li class="list-habitation__item">
-        <img class="list-habitation__photo" src="img/photo-hotel-2.jpg" width="112" height="90" alt="Фото мотеля Desert Quail Inn">
+        <img class="list-habitation__photo" src="img/photo-hotel-2.jpg" width="135" height="90" alt="Фото мотеля Desert Quail Inn">
         <div class="list-habitation__info">
           <h3 class="list-habitation__title">
             <a class="list-habitation__link" href="#">Desert Quail Inn</a>
@@ -150,7 +148,7 @@
         </div>
       </li>
       <li class="list-habitation__item">
-        <img class="list-habitation__photo" src="img/photo-hotel-3.jpg" width="112" height="90" alt="Фото апартаментов Villas at Poco Diablo">
+        <img class="list-habitation__photo" src="img/photo-hotel-3.jpg" width="135" height="90" alt="Фото апартаментов Villas at Poco Diablo">
         <div class="list-habitation__info">
           <h3 class="list-habitation__title">
             <a class="list-habitation__link" href="#">Villas at Poco Diablo</a>

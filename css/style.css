@@ -331,20 +331,35 @@ body {
   background-image: url('../img/logo-htmlacademy-active.svg');
 }
 
+.sort {
+  display: flex;
+  align-items: baseline;
+}
+
 .sort__found-cout {
   font-size: 21px;
   text-transform: uppercase;
   font-weight: 700;
+  flex-basis: 135px;
+  margin-left: 72px;
+  margin-right: 29px;
 }
+
+.sort__text {
+  margin-right: 40px;
+}
+
 .sort__text,
 .sort__link {
   font-size: 12px;
   line-height: 18px;
 }
+
 .sort__link {
   color: rgba(0, 0, 0, .3);
   text-decoration: none;
   border-bottom: 1px dashed #81b3d2;
+  margin-right: 33px;
 }
 
 .sort__link:hover {
@@ -360,6 +375,7 @@ body {
   color: #81b3d2;
   border-bottom: none;
 }
+
 .sort__link_increase,
 .sort__link_decrease {
   border-bottom: none;
@@ -373,10 +389,13 @@ body {
 
 .sort__link_increase {
   background-image: url('../img/icon-up-dir.svg');
+  margin-left: auto;
+  margin-right: 12px;
 }
 
 .sort__link_decrease {
   background-image: url('../img/icon-down-dir.svg');
+  margin-right: 72px;
 }
 
 .sort__link_increase:hover {
@@ -488,11 +507,20 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.lists-feature__item {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .feature-item {
   text-align: center;
   text-transform: uppercase;
+  flex-basis: 33.33%;
+  flex-direction: column;
 }
 
 .feature-item_theme-blue {
@@ -516,12 +544,28 @@ body {
 }
 
 .form-filter {
+  display: flex;
   background-repeat: no-repeat;
   background-position: center top;
   background-image: url('../img/background-filter.jpg');
   background-size: cover;
   color: #fff;
   text-transform: uppercase;
+}
+
+.form-filter__column {
+  min-width: 240px;
+  max-width: 352px;
+}
+
+.form-filter__column_one {
+  margin-left: 72px;
+}
+
+.form-filter__column_three {
+  margin-left: auto;
+  margin-right: 72px;
+  max-width: 328px;
 }
 
 .item-filter__legend {
@@ -548,8 +592,15 @@ body {
 }
 
 .form-filter__submit {
+  cursor: pointer;
   background-color: transparent;
   border: 2px solid white;
+  font-weight: 400;
+}
+
+.form-filter__submit:hover {
+  color: #000;
+  background-color: #fff;
 }
 
 .filter-lists {
@@ -587,6 +638,14 @@ body {
   background-position: center;
   background-image: url('../img/filter-button.svg');
   border-radius: 50%;
+  cursor: pointer;
   width: 20px;
   height: 22px;
+}
+
+.slider-range__btn_left:hover,
+.slider-range__btn_right:hover {
+  width: 22px;
+  height: 24px;
+  background-image: url('../img/filter-button-hover.svg');
 }
