@@ -520,6 +520,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   flex-basis: 33.33%;
+  display: flex;
   flex-direction: column;
 }
 
