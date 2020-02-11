@@ -107,9 +107,12 @@ body {
   text-align: left;
 }
 
-.list-links__item_delimiter {
-  margin: 0 auto;
-  width: 0;
+.list-links__item_mr-auto {
+  margin-right: auto;
+}
+
+.list-links__item_ml-auto {
+  margin-left: auto;
 }
 
 .list-links__item_align-right {
