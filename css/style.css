@@ -899,7 +899,7 @@ body {
   width: 30px;
 }
 
-.form-filter__submit {
+.form-filter__submit-btn {
   cursor: pointer;
   background-color: transparent;
   border: 2px solid white;
@@ -908,11 +908,13 @@ body {
   padding: 5px;
   margin: 0 auto;
   width: 137px;
+  transition: background-color .3s linear;
 }
 
-.form-filter__submit:hover {
+.form-filter__submit-btn:hover {
   color: #000;
   background-color: #fff;
+  transition: background-color .3s linear;
 }
 
 .filter-lists {
