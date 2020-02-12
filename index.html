@@ -59,21 +59,21 @@
             </div>
             <div class="feature-item">
               <div class="feature-item__wrap-img">
-                <img src="img/food.svg" width="70" height="70" alt="Иконка еды">
+                <img class="feature-item__img" src="img/food.svg" width="70" height="70" alt="Иконка еды">
               </div>
               <h4 class="feature-item__title">Еда</h4>
               <p class="feature-item__desc">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </div>
             <div class="feature-item">
               <div class="feature-item__wrap-img">
-                <img class="lists-feature__img" src="img/souvenirs.svg" width="64" height="76" alt="Иконка сувенира">
+                <img class="feature-item__img" src="img/souvenirs.svg" width="64" height="76" alt="Иконка сувенира">
               </div>
               <h4 class="feature-item__title">Сувениры</h4>
               <p class="feature-item__desc">Не только китайского, но и местного производства!</p>
             </div>
           </li>
           <li class="lists-feature__item">
-            <img class="lists-feature__img" src="img/feature-picture-2.jpg" width="800" height="256" alt="Фото моста дьявола">
+            <img class="feature-item__img" src="img/feature-picture-2.jpg" width="800" height="256" alt="Фото моста дьявола">
             <div class="feature-item feature-item_theme-blue">
               <h3 class="feature-item__title">Там есть<br>Мост дьявола</h3>
               <span class="feature-item__num">№2</span>
@@ -177,7 +177,7 @@
                 </label>
                 <span class="form-search-hotels__wrap-count-people">
                   <button class="form-search-hotels__btn-minus" type="button" aria-label="Увеличить количество взрослых на 1">-</button>
-                  <input class="form-search-hotels__input form-search-hotels__input_count-people" type="number" name="count-people" id="count-people" min="1" max="100" value="2">
+                  <input class="form-search-hotels__input form-search-hotels__input_count-people" type="text" name="count-people" id="count-people" value="2" pattern="^\d{1,}">
                   <button class="form-search-hotels__btn-plus" type="button" aria-label="Уменьшить количество взрослых на 1">+</button>
                 </span>
                 <label class="form-search-hotels__label form-search-hotels__label_text-right" for="count-children">
@@ -185,7 +185,7 @@
                 </label>
                 <span class="form-search-hotels__wrap-count-people">
                   <button class="form-search-hotels__btn-minus" type="button" aria-label="Увеличить количество детей на 1">-</button>
-                  <input class="form-search-hotels__input form-search-hotels__input_count-people" type="number" name="count-children" id="count-children" min="0" max="100" value="0">
+                  <input class="form-search-hotels__input form-search-hotels__input_count-people" type="text" name="count-children" id="count-children" value="0" pattern="^\d{1,}">
                   <button class="form-search-hotels__btn-plus" type="button" aria-label="Уменьшить количество детей на 1">+</button>
                 </span>
               </div>

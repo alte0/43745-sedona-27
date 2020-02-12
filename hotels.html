@@ -24,7 +24,7 @@
             <a href="#" class="list-links__link">Карта штата</a>
           </li>
           <li class="list-links__item list-links__item_align-right">
-            <a href="hotels.html" class="list-links__link">Гостиницы</a>
+            <a href="hotels.html" class="list-links__link list-links__link_active">Гостиницы</a>
           </li>
         </ul>
       </nav>
@@ -53,7 +53,7 @@
         </fieldset>
       </div>
       <div class="form-filter__column item-filter">
-        <fieldset class="item-filter__fieldset">
+        <fieldset class="item-filter__fieldset fieldset">
           <legend class="item-filter__legend">Тип жилья:</legend>
           <ul class="item-filter__lists filter-lists">
             <li class="filter-lists__item">
@@ -72,13 +72,17 @@
         </fieldset>
       </div>
       <div class="form-filter__column form-filter__column_three item-filter">
-        <fieldset class="item-filter__fieldset">
+        <fieldset class="item-filter__fieldset fieldset">
           <legend class="item-filter__legend">Стоимость в сутки (Р):</legend>
           <div class="item-filter__prices">
-            <label class="item-filter__label-price" for="min-price">От</label>
-            <input class="item-filter__input-price" type="number" name="min-price" id="min-price" value="0">
-            <label class="item-filter__label-price" for="max-price">До</label>
-            <input class="item-filter__input-price" type="number" name="max-price" id="max-price" value="3000">
+            <label class="item-filter__label-price" for="min-price">
+              От
+              <input class="item-filter__input-price" type="text" name="min-price" id="min-price" value="0" pattern="^\d{1,}">
+            </label>
+            <label class="item-filter__label-price" for="max-price">
+              До
+              <input class="item-filter__input-price" type="text" name="max-price" id="max-price" value="3000" pattern="^\d{1,}">
+            </label>
           </div>
           <div class="slider-range">
             <div class="slider-range__track"></div>
@@ -96,8 +100,16 @@
       <a class="sort__link sort__link_active" href="#">По цене</a>
       <a class="sort__link" href="#">По типу</a>
       <a class="sort__link" href="#">По рейтингу</a>
-      <a class="sort__link sort__link_increase" href="#" aria-label="По увеличению цены"></a>
-      <a class="sort__link sort__link_decrease sort__link_decrease-active" href="#" aria-label="По уменьшению цены"></a>
+      <a class="sort__link sort__link_increase" href="#" aria-label="По увеличению цены">
+        <svg class="increase" width="11" height="10" viewbox="0 0 11 10">
+          <path class="increase__path" fill="#cacaca" d="M5.5 0L0 10h11z" />
+        </svg>
+      </a>
+      <a class="sort__link sort__link_decrease sort__link_decrease-active" href="#" aria-label="По уменьшению цены">
+        <svg class="decrease" width="11" height="10" viewbox="0 0 11 10">
+          <path class="decrease__path" fill="#cacaca" d="M5.5 10L0 0h11" />
+        </svg>
+      </a>
     </p>
     <ul class="list-habitation">
       <li class="list-habitation__item">
