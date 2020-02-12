@@ -947,6 +947,7 @@ body {
 }
 
 .filter-lists__label {
+  cursor: pointer;
   line-height: 21px;
   padding-left: 40px;
   position: relative;
@@ -986,11 +987,17 @@ body {
   width: 20px;
   height: 22px;
   position: absolute;
-  top: 11px;
+  /* margin: auto; */
+  top: 21px;
+  transform: translate(-50%, -50%);
+}
+
+.slider-range__btn_left {
+  left: 3.5%;
 }
 
 .slider-range__btn_right {
-  left: 79.6%;
+  left: 82.6%;
 }
 
 .slider-range__btn_left:hover,
