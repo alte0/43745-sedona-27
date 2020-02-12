@@ -558,6 +558,7 @@ body {
 .sort__link_decrease {
   border-bottom: none;
   display: inline-block;
+  vertical-align: top;
   width: 11px;
   height: 10px;
   background-repeat: no-repeat;
@@ -584,11 +585,6 @@ body {
 .sort__link_decrease-active .decrease__path {
   fill: #81b3d2;
 }
-
-/* .sort__link_decrease:active .increase__path,
-.sort__link_decrease-active .increase__path {
-  background-image: url('../img/icon-down-dir-active.svg');
-} */
 
 .list-habitation {
   list-style: none;
@@ -633,6 +629,7 @@ body {
 .list-habitation__type,
 .list-habitation__price {
   display: inline-block;
+  vertical-align: top;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
@@ -650,6 +647,7 @@ body {
 .list-habitation__more {
   background-color: #81b3d2;
   display: inline-block;
+  vertical-align: top;
   padding: 3px 0px;
   margin-right: 2px;
   width: 110px;
@@ -670,6 +668,7 @@ body {
 .list-habitation__book-now {
   background-color: #766357;
   display: inline-block;
+  vertical-align: top;
   padding: 3px 0px;
   width: 142px;
   text-align: center;
@@ -792,6 +791,7 @@ body {
 
 .feature-item__num {
   display: inline-block;
+  vertical-align: top;
   margin: 0 auto 20px auto;
   align-self: center;/*fix ie11*/
   padding: 0 6px;
@@ -927,11 +927,11 @@ body {
   margin-bottom: 20px;
 }
 
-.filter-lists__input {
-  display: none;
+.filter-lists__input-checkbox:focus + .filter-lists__label{
+  outline: 2px dashed white;
 }
 
-.filter-lists__input + .filter-lists__label::before {
+.filter-lists__input-checkbox + .filter-lists__label::before {
   content: '';
   background-repeat: no-repeat;
   background-image: url('../img/checkbox-off.svg');
@@ -944,7 +944,7 @@ body {
   margin: auto;
 }
 
-.filter-lists__input:checked + .filter-lists__label::before {
+.filter-lists__input-checkbox:checked + .filter-lists__label::before {
   background-image: url('../img/checkbox-on.svg');
 }
 
