@@ -262,6 +262,34 @@ body {
   border: 2px solid #f2f2f2;
 }
 
+.form-search-hotels__input::-moz-placeholder {
+  font-size: 14px;
+  line-height: 26px;
+  opacity: 1;
+  color: #333;
+}
+
+.form-search-hotels__input::-webkit-input-placeholder {
+  font-size: 14px;
+  line-height: 26px;
+  opacity: 1;
+  color: #333;
+}
+
+.form-search-hotels__input:-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 26px;
+  opacity: 1;
+  color: #333;
+}
+
+.form-search-hotels__input::-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 26px;
+  opacity: 1;
+  color: #333;
+}
+
 .form-search-hotels__input::placeholder {
   font-size: 14px;
   line-height: 26px;
@@ -287,13 +315,14 @@ body {
 }
 
 .form-search-hotels__calendar-button {
+  background-color: transparent;
+  border: none;
   cursor: pointer;
   position: absolute;
   right: 9px;
   top: 50%;
   transform: translateY(-50%);
   padding: 0;
-  border: none;
 }
 
 .calendar {
@@ -913,8 +942,28 @@ body {
   width: 30px;
 }
 
-.item-filter__input-price::placeholder,
+
+.item-filter__input-price::-moz-input-placeholder {
+  opacity: 1;
+  color: white;
+}
+
 .item-filter__input-price::-webkit-input-placeholder {
+  opacity: 1;
+  color: white;
+}
+
+.item-filter__input-price:-ms-input-placeholder {
+  opacity: 1;
+  color: white;
+}
+
+.item-filter__input-price::-ms-input-placeholder {
+  opacity: 1;
+  color: white;
+}
+
+.item-filter__input-price::placeholder {
   opacity: 1;
   color: white;
 }
