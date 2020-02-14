@@ -1,0 +1,34 @@
+.feature-footer__text-big {
+  margin-top: 0;
+  padding-top: 50px;
+}
+
+.form-wrap {
+  position: relative;
+}
+
+.main__section {
+  z-index: 0;
+}
+
+.form-search-hotels {
+  width: 458px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  background-color:#fff;
+  z-index: -1;
+  transition: transform .5s linear;
+}
+
+.form-search-hotels_close {
+  transform: translate(-50%, -100%);
+  transition: transform .2s linear;
+}
+
+.map__iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}

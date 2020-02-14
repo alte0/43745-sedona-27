@@ -210,13 +210,13 @@ body {
   margin: 0;
 }
 
-.form-wrap {
+/* .form-wrap {
   position: absolute;
   width: 568px;
   left: 50%;
   transform: translateX(-50%);
   background-color: #fff;
-}
+} */
 
 .form-wrap__form {
   padding: 55px;
