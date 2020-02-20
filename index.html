@@ -114,7 +114,7 @@
                 <label class="form-search-hotels__label" for="date-start">
                   Дата заезда:
                 </label>
-                <input class="form-search-hotels__input form-search-hotels__input_f-grow" type="text" name="date-start" id="date-start" placeholder="24 апреля 2017">
+                <input class="form-search-hotels__input form-search-hotels__input_f-grow" type="text" name="date-start" id="date-start" placeholder="24 апреля 2017" required>
                 <button class="form-search-hotels__calendar-button" type="button" aria-label="Открыть календарь выбора даты заезда">
                   <svg class="calendar" width="21px" height="22px" viewbox="0 0 21 22">
                     <g >
@@ -143,7 +143,7 @@
                 <label class="form-search-hotels__label" for="date-end">
                   Дата выезда:
                 </label>
-                <input class="form-search-hotels__input form-search-hotels__input_f-grow" type="text" name="date-end" id="date-end" placeholder="4 июля 2017">
+                <input class="form-search-hotels__input form-search-hotels__input_f-grow" type="text" name="date-end" id="date-end" placeholder="4 июля 2017" required>
                 <button class="form-search-hotels__calendar-button" type="button" aria-label="Открыть календарь выбора даты выезда">
                   <svg class="calendar" width="21px" height="22px" viewbox="0 0 21 22">
                     <g >
@@ -177,7 +177,7 @@
                 </label>
                 <span class="form-search-hotels__wrap-count-people">
                   <button class="form-search-hotels__btn-minus" type="button" aria-label="Увеличить количество взрослых на 1">-</button>
-                  <input class="form-search-hotels__input form-search-hotels__input_count-people" type="text" name="count-people" id="count-people" placeholder="2" pattern="^\d{1,}">
+                  <input class="form-search-hotels__input form-search-hotels__input_count-people" type="text" name="count-people" id="count-people" placeholder="2" pattern="^\d{1,}" required>
                   <button class="form-search-hotels__btn-plus" type="button" aria-label="Уменьшить количество взрослых на 1">+</button>
                 </span>
                 <label class="form-search-hotels__label form-search-hotels__label_text-right" for="count-children">
@@ -185,7 +185,7 @@
                 </label>
                 <span class="form-search-hotels__wrap-count-people">
                   <button class="form-search-hotels__btn-minus" type="button" aria-label="Увеличить количество детей на 1">-</button>
-                  <input class="form-search-hotels__input form-search-hotels__input_count-people" type="text" name="count-children" id="count-children" placeholder="0" pattern="^\d{1,}">
+                  <input class="form-search-hotels__input form-search-hotels__input_count-people" type="text" name="count-children" id="count-children" placeholder="0" pattern="^\d{1,}" required>
                   <button class="form-search-hotels__btn-plus" type="button" aria-label="Уменьшить количество детей на 1">+</button>
                 </span>
               </div>
@@ -240,5 +240,6 @@
     </footer>
     <!-- end footer  -->
   </div>
+  <script src="js/script.js"></script>
 </body>
 </html>
