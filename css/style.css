@@ -440,7 +440,7 @@ body {
   vertical-align: top;
 }
 
-.map-wrap__iframe {
+.map-wrap__interactive-map {
   width: 100%;
   height: 593px;
   border: none;
