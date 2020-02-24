@@ -1109,6 +1109,7 @@ body {
 }
 
 .slider-range__btn {
+  background-color: white;
   background-repeat: no-repeat;
   background-position: center;
   background-image: url('../img/filter-button.svg');
