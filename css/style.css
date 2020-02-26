@@ -17,7 +17,7 @@
 }
 
 body {
-  background-color:#f2f2f2;
+  background-color: #f2f2f2;
   color: #333;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
@@ -57,7 +57,7 @@ body {
 }
 
 .header__nav {
-  padding: 14px 72px 16px ;
+  padding: 14px 72px 16px;
 }
 
 .btn {
@@ -99,7 +99,7 @@ body {
   margin: 0;
 }
 
-.list-links__item  {
+.list-links__item {
   width: 240px;
 }
 
@@ -149,7 +149,7 @@ body {
   font-size: 21px;
   line-height: 26px;
   margin: 59px auto 28px;
-  width: 620px;
+  width: 610px;
 }
 
 .feature-header__title,
@@ -225,7 +225,7 @@ body {
   top: 0;
   left: 50%;
   transform: translate(-50%, 0%);
-  background-color:#fff;
+  background-color: #fff;
   z-index: -1;
   transition: transform .5s linear;
 }
@@ -327,7 +327,7 @@ body {
 
 .form-search-hotels__input:focus {
   background-color: white;
-  border-color:#e5e5e5;
+  border-color: #e5e5e5;
 }
 
 .form-search-hotels__calendar-button {
@@ -452,12 +452,19 @@ body {
   display: flex;
 }
 
+.footer__contacts {
+  padding-left: 80px;
+}
 .footer_pos-absolut {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   background-color: rgba(255, 255, 255, .9);
+}
+
+.footer_pos-absolut .footer__contacts {
+  padding-left: 70px;
 }
 
 .footer__column {
@@ -474,15 +481,18 @@ body {
   font-size: 21px;
   text-transform: uppercase;
   margin: 0;
-  padding-left: 70px;
 }
 
 .contacts__hashtag {
   display: block;
+  line-height: 1;
 }
 
 .contacts__tel {
+  display: inline-block;
   color: inherit;
+  line-height: 1;
+  margin-top: 6px;
   text-decoration: none;
 }
 
@@ -612,7 +622,7 @@ body {
 .sort__link {
   color: rgba(0, 0, 0, .3);
   text-decoration: none;
-  border-bottom: 1px dashed #81b3d2;
+  border-bottom: 1px dotted #81b3d2;
   margin-right: 33px;
   text-transform: uppercase;
 }
@@ -686,14 +696,15 @@ body {
 }
 
 .list-habitation__title {
-  margin: 0 0 7px;
-  line-height: 1;
+  margin: -5px 0 7px;
+  font-size: 21px;
+  line-height: 26px;
+  letter-spacing: 0.01em;
+  position: relative;
 }
 
 .list-habitation__link {
-  font-size: 21px;
-  font-weight: 700;
-  color: #000000;
+  color: #000;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -730,7 +741,7 @@ body {
   display: inline-block;
   vertical-align: top;
   padding: 3px 0px;
-  margin-right: 2px;
+  margin-right: 3px;
   width: 110px;
   text-align: center;
   transition: background-color .3s linear;
@@ -809,17 +820,19 @@ body {
 
 .lists-feature__item {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   width: 100%;/*fix ie11*/
 }
 
 .feature-item {
+  box-sizing: border-box;
   text-align: center;
   text-transform: uppercase;
   display: flex;
-  flex-basis: calc(33.33333333333333% - 80px);
+  width: 33.33333333333333%;/*fix ie11*/
   flex-direction: column;
-  padding: 56px 40px 82px;
+  padding: 56px 50px 82px;
 }
 
 .feature-item__wrap-img {
@@ -850,12 +863,12 @@ body {
   background-color: #333;
 }
 
-.feature-item_theme-blue,
-.feature-item_theme-gray {
-  padding: 45px 40px;
+.feature-item_theme-blue {
+  padding: 45px 48px;
 }
 
 .feature-item_theme-gray {
+  padding: 45px 70px;
   padding-bottom: 61px;
 }
 
@@ -863,7 +876,7 @@ body {
   font-size: 21px;
   line-height: 21px;
   margin: 0 auto 25px auto;
-  width: 160px;
+  width: 155px;
 }
 
 .feature-item__num,
@@ -909,7 +922,7 @@ body {
   display: flex;
   background-color: #6e9ac1;
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center 16%;
   background-image: url('../img/background-filter.jpg');
   background-size: cover;
   color: #fff;
@@ -1017,7 +1030,7 @@ body {
   border-radius: 2px;
   display: block;
   font-weight: 400;
-  padding: 5px;
+  padding: 5px 5px 6px;
   margin: 0 auto;
   width: 137px;
   transition: background-color .3s linear;
@@ -1109,10 +1122,10 @@ body {
 }
 
 .slider-range__btn {
-  background-color: white;
   background-repeat: no-repeat;
   background-position: center;
   background-image: url('../img/filter-button.svg');
+  background-size: contain;
   border-radius: 50%;
   cursor: pointer;
   width: 20px;
@@ -1134,7 +1147,6 @@ body {
 .slider-range__btn_right:hover {
   width: 22px;
   height: 24px;
-  background-image: url('../img/filter-button-hover.svg');
 }
 
 @keyframes shake {
