@@ -321,6 +321,10 @@ body {
   width: 26px;
 }
 
+.form-search-hotels__input_count-people:invalid {
+  box-shadow: none;
+}
+
 .form-search-hotels__input:hover {
   background-color: #ebebeb;
 }
@@ -328,6 +332,7 @@ body {
 .form-search-hotels__input:focus {
   background-color: white;
   border-color: #e5e5e5;
+  outline: none;
 }
 
 .form-search-hotels__calendar-button {
@@ -455,6 +460,7 @@ body {
 .footer__contacts {
   padding-left: 80px;
 }
+
 .footer_pos-absolut {
   position: absolute;
   bottom: 0;
@@ -493,6 +499,10 @@ body {
   color: inherit;
   line-height: 1;
   margin-top: 6px;
+  vertical-align: top;
+}
+
+.contacts__tel:not(:hover) {
   text-decoration: none;
 }
 
@@ -989,8 +999,6 @@ body {
 }
 
 .item-filter__input-price {
-  display: inline-block;
-  vertical-align: baseline;
   background-color: transparent;
   border: none;
   color: inherit;
@@ -1061,6 +1069,7 @@ body {
   left: 0;
   width: 19px;
   height: 19px;
+  background-repeat: no-repeat;
   border-radius: 2px;
   border: 2px solid #fff;
   margin: auto;
